@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProviderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,9 @@ Route::post('categories', [CategoryController::class, 'store']);
 Route::get('category/{category}', [CategoryController::class, 'show']);
 Route::put('category/{category}', [CategoryController::class, 'update']);
 Route::delete('category/{category}', [CategoryController::class, 'destroy']);
+
+Route::get('providers', [ProviderController::class, 'index']);
+Route::post('providers', [ProviderController::class, 'store']);
+Route::get('provider/{provider}', [ProviderController::class, 'show']);
+Route::put('provider/{provider}', [ProviderController::class, 'update']);
+Route::delete('provider/{provider}', [ProviderController::class, 'destroy']);

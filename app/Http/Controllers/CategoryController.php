@@ -13,17 +13,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        // $categories = Category::get();
-        // return $categories;
         return Category::get();
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
     }
 
     /**
@@ -41,14 +31,6 @@ class CategoryController extends Controller
     public function show(Category $category)
     {
         return $category;
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Category $category)
-    {
-        //
     }
 
     /**
